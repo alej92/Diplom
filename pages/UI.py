@@ -38,7 +38,7 @@ class UI:
 
 
     @allure.step("АПИ-метод. Выполнить поиск книги по названию {name} на русском языке")
-    def search(self, name: str):
+    def search(self, name: str) -> list:
       """
         Ввести в поисковую строку название кники и нажать кнопку поиска.
 
@@ -113,7 +113,7 @@ class UI:
     def aktsii(self):
       """
         Нажать на кнопку "Акции".
-        Нужно указать локато кнопки "Акции" и нажать на него
+        Нужно указать локатор кнопки "Акции" и нажать на него
       """
       self._driver.find_element(By.CSS_SELECTOR, "a[href='/promotions']").click()
       self._driver.find_element(

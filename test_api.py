@@ -7,8 +7,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 from pages.API import API
 
-
-
 api = API("https://web-gate.chitai-gorod.ru/api")
 
 
