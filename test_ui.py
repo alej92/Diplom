@@ -48,7 +48,7 @@ def test_poisk_knigi(driver):
 def test_color_katalog(driver):
     with allure.step("Создать экземпляр класс 'UI'"):
         chitai_gorod = UI(driver)
-    chitai_gorod.color_katalog()
+    chitai_gorod.color_katalog()    
     with allure.step("Добавить цвет в переменную"):
         color = chitai_gorod.color_katalog()
     with allure.step("Сравнить цвет кнопки"):
